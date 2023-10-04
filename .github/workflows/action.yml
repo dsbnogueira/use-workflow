@@ -1,12 +1,9 @@
-on: 
-    workflow_dispatch:
+name: Caller Workflow
+
+on: [push]
 
 jobs:
-    deploy:
-        name: teste
-        runs-on: ubuntu-latest
-
-        steps: 
-        - name: use
-          uses: dsbnogueira/reusable-workflow/.github/workflows/reusable.yaml@main
-    
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dsbnogueira/reusable-workflow/.github/workflows/reusable.yaml@main
