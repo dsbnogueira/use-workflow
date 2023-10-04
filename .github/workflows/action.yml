@@ -1,0 +1,7 @@
+on: 
+    workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: dsbnogueira/reusable-workflow/.github/workflows/reusable.yaml@main
+    
