@@ -2,6 +2,11 @@ on:
     workflow_dispatch:
 
 jobs:
-  deploy:
-    uses: dsbnogueira/reusable-workflow/.github/workflows/reusable.yaml@main
+    deploy:
+        name: teste
+        runs-on: ubuntu-latest
+
+        steps: 
+        - name: use
+          uses: dsbnogueira/reusable-workflow/.github/workflows/reusable.yaml@main
     
