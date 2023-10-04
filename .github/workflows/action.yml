@@ -1,6 +1,7 @@
 name: Caller Workflow
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   deploy:
